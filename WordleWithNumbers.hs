@@ -4,20 +4,7 @@ module WordleWithNumbers
     ( solve
     ) where
 
-#ifdef GRADESCOPE
-import           AutograderUtils (print, readLn)
-import           Prelude         hiding (print, readLn)
-#endif
-
--- This task is worth 20 POINTS
--- Do NOT modify anything above this line.
--- Do NOT use any imports.
-
 {--
-
-In this assignment, you will implement an algorithm to solve a game called "Wordle With Numbers,"
-which is similar to the popular game Wordle, but instead of guessing a word,
-you will be guessing a sequence of numbers.
 
 Game description
 
@@ -76,21 +63,6 @@ N> represents the line with number N. "N>" is not a part of the input-output.
 13> ([-1], [-1])
 14> [9, 3, 5, 5, 1]
 15> ([0, 1, 2, 3, 4], [])
-
-Use the function `readLn` to read something from the standard input (terminal)
-and `print` to print something to the standard output (terminal).
-Use only these functions to perform input-output because otherwise your solution won’t be tested and graded properly.
-Beware that if you try to read from the terminal when there is no input
-(e.g. in the end of the game or when the computer is expecting you to print something), your solution will hang and timeout.
-
-To read something of type a from the standard input in do-notation, use type annotations:
-	myVar <- readLn :: IO a
-E.g. to read a list of Bools, use
-	myBools <- readLn :: IO [Bool]
-
-The number of attempts your solution makes to guess the sequence won’t be taken into account
-but keep in mind that there are still time limits of 20 seconds for each test.
-Bruteforcing up to 10^1000 combinations is probably a bad idea.
 
 --}
 
